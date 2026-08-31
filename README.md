@@ -2,7 +2,7 @@
 
 A Node.js app deployed to AWS Elastic Beanstalk, with the entire infrastructure (S3, IAM, Elastic Beanstalk, CloudWatch) defined and managed using Terraform instead of manual AWS Console setup.
 ## Architecture
-[Architecture](diagram/architecture.png)
+![Architecture Diagram](diagram/architecture.png)
 ## What this project does
 
 - Deploys a small Express.js app to AWS
