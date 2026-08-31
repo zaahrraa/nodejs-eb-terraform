@@ -8,11 +8,6 @@ output "environment_name" {
   value       = aws_elastic_beanstalk_environment.env.name
 }
 
-output "environment_status" {
-  description = "Current status Terraform sees for the environment right after apply"
-  value       = aws_elastic_beanstalk_environment.env.status
-}
-
 output "s3_bucket_name" {
   description = "S3 bucket storing application versions"
   value       = aws_s3_bucket.app_bucket.bucket

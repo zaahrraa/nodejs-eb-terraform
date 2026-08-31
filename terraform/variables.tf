@@ -19,7 +19,7 @@ variable "environment_name" {
 variable "solution_stack_name" {
   description = "Elastic Beanstalk solution stack (platform) to use"
   type        = string
-  default     = "64bit Amazon Linux 2023 v6.5.1 running Node.js 20"
+  default     = "64bit Amazon Linux 2023 v6.11.7 running Node.js 22"  
 }
 
 variable "instance_type" {

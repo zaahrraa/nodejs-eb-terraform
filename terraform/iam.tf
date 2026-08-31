@@ -57,9 +57,13 @@ resource "aws_iam_role" "eb_service_role" {
   })
 }
 
+#resource "aws_iam_role_policy_attachment" "eb_service_enhanced_health" {
+#  role       = aws_iam_role.eb_service_role.name
+#  policy_arn = "arn:aws:iam::aws:policy/AWSElasticBeanstalkEnhancedHealth"
+#}
 resource "aws_iam_role_policy_attachment" "eb_service_enhanced_health" {
   role       = aws_iam_role.eb_service_role.name
-  policy_arn = "arn:aws:iam::aws:policy/AWSElasticBeanstalkEnhancedHealth"
+  policy_arn = "arn:aws:iam::aws:policy/service-role/AWSElasticBeanstalkEnhancedHealth"
 }
 
 resource "aws_iam_role_policy_attachment" "eb_service_managed_updates" {
